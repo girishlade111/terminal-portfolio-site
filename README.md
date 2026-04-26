@@ -10,6 +10,208 @@
 
 ---
 
+## Visual Demonstration
+
+### Terminal UI Structure
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  ● ● ●                                        TerminalPortfolio │  ← Window Controls
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Welcome to Girish Balaso Lade's Portfolio Terminal               │
+│  Automation Tester and Programmer | admin@ladestack.in        │
+│  Type 'help' to see available commands                         │
+│                                                                 │
+│  ═══════════════════════════════════════════════════════════════ │
+│                                                                 │
+│  girish@portfolio:~$ help                                      │
+│                                                                 │
+│  Available commands:                                          │
+│                                                                 │
+│    help          - Show this help message                         │
+│    clear         - Clear the terminal                            │
+│    ls            - List directory contents                    │
+│    cd <dir>      - Change directory                          │
+│    cat <file>    - Display file contents                     │
+│    pwd           - Show current directory                   │
+│    whoami        - Display user information                 │
+│    open <url>    - Open URL in new tab                      │
+│    history       - Show command history                     │
+│                                                                 │
+│  Direct access commands:                                      │
+│    resume        - Display complete resume                   │
+│    about         - Show about information                    │
+│    experience    - Display work experience                  │
+│    education     - Show education background               │
+│    skills        - Display technical skills               │
+│    projects      - Show portfolio projects                │
+│    contact       - Display contact information             │
+│    languages     - Show language proficiency             │
+│    hobbies       - Display hobbies and interests          │
+│                                                                 │
+│  ───────────────────────────────────────────────────────────   │
+│                                                                 │
+│  girish@portfolio:~$ █                                         │  ← Blinking Cursor
+│                                                                 │
+└─────────────���───────────────────────────────────────────────────┘
+```
+
+### How It Works
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        APP FLOW                                  │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│   ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌────────┐  │
+│   │  User    │───▶│  Input   │───▶│ Command  │───▶│ Output │  │
+│   │  Types   │    │  Field   │    │ Parser   │    │ Display│  │
+│   └──────────┘    └──────────┘    └──────────┘    └────────┘  │
+│        │                                        │              │
+│        │         ┌──────────────────────────────┘              │
+│        │         │                                           │
+│        ▼         ▼                                           ▼
+│   ┌─────────┐  ┌──────────────┐  ┌─────────────────────────────────┐
+│   │ History │  │ TypeText   │  │ Terminal Content               │
+│   │ Nav    │  │ Animation │  │ auto-scroll to bottom            │
+│   └─────────┘  └──────────────┘  └─────────────────────────────────┘
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Command Execution Flow
+
+```
+1. User types command:     "skills"
+                         ↓
+2. Parser extracts:      command = "skills"
+                         ↓
+3. Switch matches:      case "skills":
+                         ↓
+4. Process data:        gather skills from data object
+                         ↓
+5. Type animation:      animateText(output, delay)
+                         ↓
+6. Display result:      "TECHNICAL SKILLS: ..."
+```
+
+### Terminal Window Components
+
+```
+┌────────────────────────────────────────────────┐
+│  ● ○ ○  │ Mac-style Window Controls            │
+├────────────────────────────────────────────────┤
+│                                                │
+│  [Social Links Header]                          │
+│  🌐 │ 🐙 │ 💼 │ 📸 │ ✉️                       │
+│                                                │
+├────────────────────────────────────────────────┤
+│                                                │
+│  ┌────────────────────────────────────────┐   │
+│  │                                       │   │
+│  │      TERMINAL CONTENT AREA              │   │
+│  │      (scrollable)                      │   │
+│  │                                       │   │
+│  │  > command input                      │   │
+│  │  █ (blinking cursor)                │   │
+│  │                                       │   │
+│  └────────────────────────────────────────┘   │
+│                                                │
+├────────────────────────────────────────────────┤
+│  Quick: resume | skills | projects | about | contact │
+└────────────────────────────────────────────────┘
+```
+
+### Directory Navigation Structure
+
+```
+~ (root)
+├── about/
+│   ├── bio.txt
+│   └── summary.txt
+├── experience/
+│   └── job_1.txt
+├── education/
+│   ├── degree.txt
+│   └── certifications.txt
+├── skills/
+│   ├── frontend.txt
+│   ├── backend.txt
+│   └── tools.txt
+├── projects/
+│   ├── gb_coder.txt
+│   ├── resagent.txt
+│   └── imagesqueeze.txt
+├── contact/
+│   ├── info.txt
+│   └── social.txt
+├── languages/
+│   ├── marathi.txt
+│   ├── hindi.txt
+│   └── english.txt
+├── hobbies/
+│   └── interests.txt
+├── README.md
+└── resume.txt
+```
+
+### Example Usage
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  ▶ Initial Load (Welcome Message)                        │
+├─────────────────────────────────────────────────────────────────┤
+│  Welcome to Girish Balaso Lade's Portfolio Terminal   │
+│  Automation Tester and Programmer | admin@ladestack.in  │
+│  Type 'help' to see available commands           │
+│                                                          │
+│  girish@portfolio:~$                               │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│  ▶ Type 'about'                                     │
+├─────────────────────────────────────────────────────────────────┤
+│  girish@portfolio:~$ about                        │
+│                                                          │
+│  Hi, I'm Girish Balaso Lade!                        │
+│                                                          │
+│  As an Automation Tester and Programmer...        │
+│  ...                                               │
+│  Professional Summary:                           │
+│  ✨ Automation Software Tester                 │
+│  🛠️ UI/UX Designer and Developer               │
+│  🚀 Founder of Ladestack (AI SaaS Products)     │
+│  ...                                               │
+└───────────────────────────────────────────────────────────────��─��
+
+┌─────────────────────────────────────────────────────────────────┐
+│  ▶ Type 'projects'                                │
+├─────────────────────────────────────────────────────────────────┤
+│  girish@portfolio:~$ projects                    │
+│                                                          │
+│  PORTFOLIO PROJECTS:                                │
+│  ================================================ │
+│                                                          │
+│  1. GB Coder                                       │
+│     Type: Web Application                          │
+│     Status: Production                             │
+│     Description: AI powered HTML, CSS & JS...     │
+│                                                          │
+│     Technologies Used:                            │
+│     • Node.js                                    │
+│     • React                                     │
+│     • TypeScript                                │
+│                                                          │
+│  2. ResAgent                                     │
+│     Type: AI Research Platform                   │
+│     Status: Development                          │
+│  ...                                               │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## Features
 
 ### Core Features
