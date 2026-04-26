@@ -550,9 +550,22 @@ export default function TerminalPortfolio() {
         const url = args[1]
         if (!url) {
           output = ["open: missing URL operand"]
+        } else if (typeof window !== 'undefined') {
+          try {
+            let cleanUrl = url.replace(/[<>:]/g, "").trim()
+            if (!cleanUrl) {
+              output = ["open: invalid URL provided"]
+            } else {
+              const fullUrl = cleanUrl.startsWith("http") ? cleanUrl : `https://${cleanUrl}`
+              const urlObj = new URL(fullUrl)
+              window.open(urlObj.href, "_blank")
+              output = [`Opening ${cleanUrl} in new tab...`]
+            }
+          } catch {
+            output = [`open: invalid URL '${url}'`]
+          }
         } else {
-          window.open(url.startsWith("http") ? url : `https://${url}`, "_blank")
-          output = [`Opening ${url} in new tab...`]
+          output = [`open: cannot open URL in server environment`]
         }
         break
 
