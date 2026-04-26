@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-**Deployed URL:** [https://v0-terminal-portfolio-site.vercel.app](https://v0-terminal-portfolio-site.vercel.app)
+**Deployed URL:** [https://ladestack.in](https://ladestack.in)
 
 ---
 
@@ -18,7 +18,8 @@
   - Command-line input with typing animations
   - Command history navigation (Arrow Up/Down keys)
   - Tab-completion style directory navigation
-  
+  - Auto-scroll to bottom on new output
+
 - **Built-in Commands**
   - `help` - Display all available commands
   - `clear` - Clear terminal screen
@@ -49,6 +50,11 @@
   - CRT-style green text on black background
   - Typing animation effect
   - Auto-scroll to bottom on new output
+
+- **Social Links**
+  - GitHub, LinkedIn, Instagram, CodePen icons in header
+  - Website and email links
+  - Hover effects with brand colors
 
 - **Responsive Design**
   - Mobile-friendly terminal interface
@@ -154,8 +160,10 @@ yarn start
 terminal-portfolio-site/
 ├── app/
 │   ├── globals.css          # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx          # Main terminal component
+│   ├── layout.tsx         # Root layout with SEO meta tags
+│   ├── page.tsx          # Main terminal component
+│   ├── robots.ts        # Robots.txt generation
+│   └── sitemap.ts       # Sitemap.xml generation
 ├── components/
 │   ├── components.json  # shadcn configuration
 │   └── theme-provider.tsx # Theme provider
@@ -170,7 +178,8 @@ terminal-portfolio-site/
 ├── package.json
 ├── postcss.config.mjs   # PostCSS configuration
 ├── tailwind.config.ts # Tailwind CSS configuration
-└── tsconfig.json      # TypeScript configuration
+├── tsconfig.json      # TypeScript configuration
+└── README.md          # This file
 ```
 
 ---
@@ -230,6 +239,15 @@ const nextConfig = {
 export default nextConfig
 ```
 
+### SEO Configuration
+
+The portfolio includes comprehensive SEO setup:
+
+- **Meta Tags** - Title, description, keywords, authors, Open Graph, Twitter Cards
+- **Robots.txt** - Allows all search engine crawlers
+- **Sitemap.xml** - Auto-generated with priority levels
+- **Canonical URL** - Proper URL structure
+
 ---
 
 ## Stats
@@ -259,6 +277,11 @@ export default nextConfig
 | `whoami` | User info | `whoami` |
 | `open` | Open URL | `open github.com` |
 | `history` | Command history | `history` |
+
+### Quick Access Commands
+
+| Command | Description | Example |
+|---------|-------------|---------|
 | `resume` | Full resume | `resume` |
 | `about` | About page | `about` |
 | `experience` | Work history | `experience` |
@@ -292,6 +315,59 @@ vercel
 
 ---
 
+## Customization
+
+### Updating Profile Information
+
+Edit the data in `app/page.tsx`:
+
+```typescript
+const developer = {
+  name: "Your Name",
+  title: "Your Title",
+  email: "your@email.com",
+  phone: "+91-XXXXXXXXXX",
+  address: "City, Country",
+  website: "https://yourwebsite.com",
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourusername",
+  instagram: "https://instagram.com/yourusername",
+  codepen: "https://codepen.io/yourusername",
+}
+```
+
+### Updating Experience
+
+```typescript
+const experience = [
+  {
+    title: "Job Title",
+    company: "Company Name",
+    period: "2023 - Present",
+    description: [
+      "Responsibility 1",
+      "Responsibility 2",
+    ],
+  },
+]
+```
+
+### Adding Projects
+
+```typescript
+const projects = [
+  {
+    name: "Project Name",
+    description: "Project description",
+    tech: ["React", "Node.js", "MongoDB"],
+    status: "Production",
+    type: "Web Application",
+  },
+]
+```
+
+---
+
 ## License
 
 MIT License - Feel free to use this project for your own portfolio.
@@ -300,11 +376,12 @@ MIT License - Feel free to use this project for your own portfolio.
 
 ## Author
 
-**Girish Lade**
-- Email: admin@ladestack.in
+**Girish Balaso Lade**
+- Title: Automation Tester and Programmer
+- Email: [admin@ladestack.in](mailto:admin@ladestack.in)
 - Website: [https://ladestack.in](https://ladestack.in)
 - GitHub: [https://github.com/girishlade111](https://github.com/girishlade111)
-- LinkedIn: [https://linkedin.com/in/girish-lade-075bba201](https://linkedin.com/in/girish-lade-075bba201)
+- LinkedIn: [https://www.linkedin.com/in/girish-lade-075bba201/](https://www.linkedin.com/in/girish-lade-075bba201/)
 - Instagram: [https://www.instagram.com/girish_lade_/](https://www.instagram.com/girish_lade_/)
 - CodePen: [https://codepen.io/Girish-Lade-the-looper](https://codepen.io/Girish-Lade-the-looper)
 
@@ -316,3 +393,4 @@ MIT License - Feel free to use this project for your own portfolio.
 - Deployed on [Vercel](https://vercel.com)
 - Built with [shadcn/ui](https://ui.shadcn.com) components
 - Styled with [Tailwind CSS](https://tailwindcss.com)
+- Icons by [Lucide](https://lucide.dev)
