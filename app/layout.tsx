@@ -4,40 +4,36 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://v0-terminal-portfolio-site.vercel.app'),
+  metadataBase: new URL('https://ladestack.in'),
   title: {
-    default: 'Muhammad Ali | MERN Stack Developer - Interactive Terminal Portfolio',
-    template: '%s | Muhammad Ali - MERN Stack Developer',
+    default: 'Girish Lade | Full Stack Developer - Interactive Terminal Portfolio',
+    template: '%s | Girish Lade - Full Stack Developer',
   },
-  description: 'Interactive terminal-style portfolio website of Muhammad Ali, a MERN Stack and React Native Developer with 2+ years of experience. Explore skills, projects, experience, and contact information through a CLI-style interface.',
+  description: 'Interactive terminal-style portfolio website of Girish Lade, a Full Stack Developer. Explore skills, projects, experience, and contact information through a CLI-style interface.',
   keywords: [
-    'Muhammad Ali',
-    'MERN Stack Developer',
-    'React Native Developer',
+    'Girish Lade',
     'Full Stack Developer',
     'Web Developer',
-    'Mobile App Developer',
     'JavaScript Developer',
     'TypeScript Developer',
     'Node.js Developer',
     'React Developer',
-    'MongoDB Developer',
-    'Express.js Developer',
     'Next.js Developer',
     'Portfolio Website',
     'Developer Portfolio',
     'Terminal Portfolio',
     'CLI Portfolio',
     'Interactive Portfolio',
+        'Ladestack',
   ],
   authors: [
     {
-      name: 'Muhammad Ali',
-      url: 'https://github.com/muhammadali',
+      name: 'Girish Lade',
+      url: 'https://github.com/girishlade111',
     },
   ],
-  creator: 'Muhammad Ali',
-  publisher: 'Muhammad Ali',
+  creator: 'Girish Lade',
+  publisher: 'Girish Lade',
   formatDetection: {
     email: true,
     address: true,
@@ -47,31 +43,31 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://v0-terminal-portfolio-site.vercel.app',
-    siteName: 'Muhammad Ali - Terminal Portfolio',
-    title: 'Muhammad Ali | MERN Stack Developer - Interactive Terminal Portfolio',
-    description: 'Interactive terminal-style portfolio website of Muhammad Ali, a MERN Stack and React Native Developer with 2+ years of experience. Explore skills, projects, experience, and contact information through a CLI-style interface.',
+    url: 'https://ladestack.in',
+    siteName: 'Girish Lade - Terminal Portfolio',
+    title: 'Girish Lade | Full Stack Developer - Interactive Terminal Portfolio',
+    description: 'Interactive terminal-style portfolio website of Girish Lade, a Full Stack Developer. Explore skills, projects, experience, and contact information through a CLI-style interface.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Muhammad Ali - MERN Stack Developer Portfolio',
+        alt: 'Girish Lade - Full Stack Developer Portfolio',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Ali | MERN Stack Developer - Interactive Terminal Portfolio',
-    description: 'Interactive terminal-style portfolio website of Muhammad Ali, a MERN Stack and React Native Developer with 2+ years of experience.',
-    creator: '@muhammadali',
+    title: 'Girish Lade | Full Stack Developer - Interactive Terminal Portfolio',
+    description: 'Interactive terminal-style portfolio website of Girish Lade, a Full Stack Developer.',
+    creator: '@girish_lade',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Muhammad Ali - MERN Stack Developer Portfolio',
+        alt: 'Girish Lade - Full Stack Developer Portfolio',
       },
     ],
   },
@@ -94,7 +90,7 @@ export const metadata: Metadata = {
   },
 
   category: 'technology',
-  classification: 'Portfolio Website, Developer Portfolio, MERN Stack Developer',
+  classification: 'Portfolio Website, Developer Portfolio, Full Stack Developer',
 }
 
 export const viewport = {
@@ -116,7 +112,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://v0-terminal-portfolio-site.vercel.app" />
+        <link rel="canonical" href="https://ladestack.in" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <style>{`

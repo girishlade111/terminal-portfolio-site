@@ -300,10 +300,13 @@ MIT License - Feel free to use this project for your own portfolio.
 
 ## Author
 
-**Muhammad Ali**
-- Email: muhammadaliofficial001@gmail.com
-- GitHub: [https://github.com/muhammadali](https://github.com/muhammadali)
-- LinkedIn: [https://linkedin.com/in/muhammadali](https://linkedin.com/in/muhammadali)
+**Girish Lade**
+- Email: admin@ladestack.in
+- Website: [https://ladestack.in](https://ladestack.in)
+- GitHub: [https://github.com/girishlade111](https://github.com/girishlade111)
+- LinkedIn: [https://linkedin.com/in/girish-lade-075bba201](https://linkedin.com/in/girish-lade-075bba201)
+- Instagram: [https://www.instagram.com/girish_lade_/](https://www.instagram.com/girish_lade_/)
+- CodePen: [https://codepen.io/Girish-Lade-the-looper](https://codepen.io/Girish-Lade-the-looper)
 
 ---
 

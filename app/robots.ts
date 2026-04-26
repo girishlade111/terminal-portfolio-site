@@ -44,7 +44,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/', '/_next/', '/static/'],
       },
     ],
-    sitemap: 'https://v0-terminal-portfolio-site.vercel.app/sitemap.xml',
-    host: 'https://v0-terminal-portfolio-site.vercel.app',
+    sitemap: 'https://ladestack.in/sitemap.xml',
+    host: 'https://ladestack.in',
   }
 }

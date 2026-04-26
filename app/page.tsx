@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
-import { Minimize2, Square, X } from "lucide-react"
+import { Github, Linkedin, Mail, Globe, Code2 } from "lucide-react"
 
 interface Command {
   input: string
@@ -22,14 +22,26 @@ export default function TerminalPortfolio() {
   const terminalRef = useRef<HTMLDivElement>(null)
 
   const developer = {
-    name: "Muhammad Ali",
-    title: "MERN Stack Developer",
-    email: "muhammadaliofficial001@gmail.com",
-    phone: "+92-3062767-542",
-    address: "House No 69 CivilLine Near P.I.D.C Karachi Pakistan",
-    github: "https://github.com/muhammadali",
-    linkedin: "https://linkedin.com/in/muhammadali",
+    name: "Girish Lade",
+    title: "Full Stack Developer",
+    email: "admin@ladestack.in",
+    phone: "+91-9876543210",
+    address: "Maharashtra, India",
+    website: "https://ladestack.in",
+    github: "https://github.com/girishlade111",
+    linkedin: "https://linkedin.com/in/girish-lade-075bba201",
+    instagram: "https://www.instagram.com/girish_lade_/",
+    codepen: "https://codepen.io/Girish-Lade-the-looper",
   }
+
+  const socialLinks = [
+    { name: "GitHub", url: developer.github, icon: Github, color: "text-gray-400" },
+    { name: "LinkedIn", url: developer.linkedin, icon: Linkedin, color: "text-blue-400" },
+    { name: "Instagram", url: developer.instagram, icon: Code2, color: "text-pink-400" },
+    { name: "CodePen", url: developer.codepen, icon: Code2, color: "text-white" },
+    { name: "Website", url: developer.website, icon: Globe, color: "text-green-400" },
+    { name: "Email", url: `mailto:${developer.email}`, icon: Mail, color: "text-yellow-400" },
+  ]
 
   const experience = [
     {
@@ -374,11 +386,14 @@ export default function TerminalPortfolio() {
           "",
           `📧 Email: ${developer.email}`,
           `📱 Phone: ${developer.phone}`,
-          `📍 Address: ${developer.address}`,
+          `🌐 Website: ${developer.website}`,
           "",
           "Social & Professional Links:",
+          `🌐 Website: ${developer.website}`,
           `🐙 GitHub: ${developer.github}`,
           `💼 LinkedIn: ${developer.linkedin}`,
+          `📸 Instagram: ${developer.instagram}`,
+          `✏️ CodePen: ${developer.codepen}`,
           "",
           "Feel free to connect and collaborate!",
           "",
@@ -539,7 +554,7 @@ export default function TerminalPortfolio() {
         switch (file) {
           case "README.md":
             output = [
-              "# Muhammad Ali - MERN Stack Developer Portfolio",
+              "# Girish Lade - Full Stack Developer Portfolio",
               "",
               `Welcome to ${developer.name}'s interactive terminal portfolio!`,
               "",
@@ -643,11 +658,26 @@ export default function TerminalPortfolio() {
             <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
           </div>
-          <div className="text-gray-300 text-sm">Terminal</div>
-          <div className="flex items-center space-x-2 text-gray-400">
-            <Minimize2 size={14} />
-            <Square size={14} />
-            <X size={14} />
+          <div className="text-gray-300 text-sm hidden md:block">TerminalPortfolio</div>
+          <div className="flex items-center space-x-3">
+            <a href={developer.website} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <Globe size={14} />
+            </a>
+            <a href={developer.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <Github size={14} />
+            </a>
+            <a href={developer.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <Linkedin size={14} />
+            </a>
+            <a href={developer.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors">
+              <Code2 size={14} />
+            </a>
+            <a href={developer.codepen} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <Code2 size={14} />
+            </a>
+            <a href={`mailto:${developer.email}`} className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <Mail size={14} />
+            </a>
           </div>
         </div>
 

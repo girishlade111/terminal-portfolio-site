@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://v0-terminal-portfolio-site.vercel.app'
+  const baseUrl = 'https://ladestack.in'
 
   return [
     {
