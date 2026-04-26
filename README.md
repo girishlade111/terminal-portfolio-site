@@ -1,6 +1,6 @@
 # Terminal Portfolio Site
 
-> An interactive CLI-style portfolio website that mimics a terminal/command-line interface. Built with modern web technologies for a unique developer-focused presentation.
+> An interactive CLI-style portfolio website that mimics a terminal/command-line interface. Perfect for developers who want to showcase their work in a unique, command-line inspired presentation.
 
 ---
 
@@ -19,6 +19,7 @@
   - Command history navigation (Arrow Up/Down keys)
   - Tab-completion style directory navigation
   - Auto-scroll to bottom on new output
+  - Real-time command execution
 
 - **Built-in Commands**
   - `help` - Display all available commands
@@ -377,13 +378,14 @@ MIT License - Feel free to use this project for your own portfolio.
 ## Author
 
 **Girish Balaso Lade**
-- Title: Automation Tester and Programmer
-- Email: [admin@ladestack.in](mailto:admin@ladestack.in)
-- Website: [https://ladestack.in](https://ladestack.in)
-- GitHub: [https://github.com/girishlade111](https://github.com/girishlade111)
-- LinkedIn: [https://www.linkedin.com/in/girish-lade-075bba201/](https://www.linkedin.com/in/girish-lade-075bba201/)
-- Instagram: [https://www.instagram.com/girish_lade_/](https://www.instagram.com/girish_lade_/)
-- CodePen: [https://codepen.io/Girish-Lade-the-looper](https://codepen.io/Girish-Lade-the-looper)
+
+- **Title:** Automation Tester and Programmer
+- **Email:** [admin@ladestack.in](mailto:admin@ladestack.in)
+- **Website:** [https://ladestack.in](https://ladestack.in)
+- **GitHub:** [https://github.com/girishlade111](https://github.com/girishlade111)
+- **LinkedIn:** [https://www.linkedin.com/in/girish-lade-075bba201/](https://www.linkedin.com/in/girish-lade-075bba201/)
+- **Instagram:** [https://www.instagram.com/girish_lade_/](https://www.instagram.com/girish_lade_/)
+- **CodePen:** [https://codepen.io/Girish-Lade-the-looper](https://codepen.io/Girish-Lade-the-looper)
 
 ---
 
