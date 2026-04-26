@@ -21,17 +21,48 @@ export default function TerminalPortfolio() {
   const inputRef = useRef<HTMLInputElement>(null)
   const terminalRef = useRef<HTMLDivElement>(null)
 
-  const developer = {
-    name: "Girish Lade",
-    title: "Full Stack Developer",
+const developer = {
+    name: "Girish Balaso Lade",
+    title: "Automation Tester and Programmer",
     email: "admin@ladestack.in",
-    phone: "+91-9876543210",
-    address: "Maharashtra, India",
+    phone: "+91-9765868216",
+    address: "Mumbai, India",
     website: "https://ladestack.in",
     github: "https://github.com/girishlade111",
-    linkedin: "https://linkedin.com/in/girish-lade-075bba201",
+    linkedin: "https://www.linkedin.com/in/girish-lade-075bba201/",
     instagram: "https://www.instagram.com/girish_lade_/",
     codepen: "https://codepen.io/Girish-Lade-the-looper",
+  }
+
+  const experience = [
+    {
+      title: "Automation Software Tester",
+      company: "ladestack.in",
+      period: "2027 - Present",
+      description: [
+        "Automation software tester",
+        "UI/UX designer and developer",
+        "Founder and owner of 'ladestack.in'",
+        "LadeStack provides free to use AI powered SaaS products and tools for developers and programmers",
+      ],
+    },
+  ]
+
+  const education = [
+    {
+      degree: "Graduation",
+      field: "Mechanical and IT",
+      institution: "Sveri College, Pandharpur",
+      period: "2021 - 2024",
+    },
+  ]
+
+  const skills = {
+    frontend: ["n8n", "typescript", "javascript", "react", "next.js", "three.js", "supabase", "mongoDB", "cursor", "claude code", "copilot", "opencode", "aws", "azure"],
+    backend: ["node.js", "express", "mongoDB", "redis", "supabase", "appwrite", "firebase"],
+    languages: ["Python", "JavaScript", "TypeScript", "Java", "React", "Next.js"],
+    databases: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Supabase", "Appwrite", "Firebase"],
+    tools: ["Git", "Docker", "AWS", "Azure", "VS Code", "n8n", "Slack", "Vercel", "Netlify"],
   }
 
   const socialLinks = [
@@ -114,7 +145,12 @@ export default function TerminalPortfolio() {
   }
 
   const languages = {
-    urdu: {
+    marathi: {
+      speaking: "Native",
+      listening: "Native",
+      writing: "Native",
+    },
+    hindi: {
       speaking: "Native",
       listening: "Native",
       writing: "Native",
@@ -126,26 +162,38 @@ export default function TerminalPortfolio() {
     },
   }
 
-  const hobbies = ["Reading", "Searching", "Martial Arts", "Designing"]
+  const hobbies = ["Coding", "Exploring AI tools"]
 
   const projects = [
     {
-      name: "E-Commerce Platform",
-      description: "Full-stack MERN application with payment integration and admin dashboard",
-      tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Stripe API"],
+      name: "GB Coder",
+      description: "AI powered HTML, CSS & JS code compiler, editor and enhancer",
+      tech: ["Node.js", "React", "TypeScript"],
       status: "Production",
       type: "Web Application",
     },
     {
-      name: "Task Management App",
-      description: "Cross-platform mobile app for team collaboration and project tracking",
-      tech: ["React Native", "Firebase", "Redux", "Node.js"],
-      status: "Production",
-      type: "Mobile Application",
+      name: "ResAgent",
+      description: "Production-grade, multi-agent AI research system for depth, accuracy, and scale",
+      tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "NVIDIA NIM", "OpenRouter"],
+      status: "Development",
+      type: "AI Research Platform",
     },
     {
-      name: "Real Estate Portal",
-      description: "Property listing platform with advanced search and filtering",
+      name: "Lade Slides Studio",
+      description: "Web-based presentation and spreadsheet application with real-time collaboration",
+      tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Zustand"],
+      status: "Development",
+      type: "Web Application",
+    },
+    {
+      name: "ImageSqueeze",
+      description: "Free image compressor, resizer & WebP converter - 100% client-side privacy",
+      tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "browser-image-compression"],
+      status: "Production",
+      type: "Web Tool",
+    },
+  ]
       tech: ["Next.js", "MongoDB", "Tailwind CSS", "AWS S3"],
       status: "Development",
       type: "Web Application",
@@ -266,24 +314,19 @@ export default function TerminalPortfolio() {
         output = [
           `Hi, I'm ${developer.name}!`,
           "",
-          "As a MERN Stack and React Native developer, my expertise lies in",
-          "crafting versatile applications that seamlessly bridge the gap",
-          "between web and mobile platforms.",
+          "As an Automation Tester and Programmer, my expertise lies in",
+          "building powerful AI-powered tools and SaaS products that help",
+          "developers and programmers streamline their workflow.",
           "",
-          "By harnessing the power of MongoDB, Express.js, React, and Node.js,",
-          "I create dynamic web applications with intuitive user interfaces",
-          "and robust backend functionalities.",
-          "",
-          "My proficiency in React Native enables me to extend these capabilities",
-          "to mobile development, creating cross-platform apps with smooth",
-          "performance and outstanding user experiences.",
+          "I am the founder and owner of Ladestack, a company dedicated to",
+          "providing free AI-powered SaaS products and tools for developers.",
           "",
           "Professional Summary:",
-          "✨ MERN Stack Developer with 2+ years of experience",
-          "📱 React Native specialist for cross-platform mobile apps",
-          "🎓 Teaching experience in MERN Stack development",
-          "🚀 Passionate about continuous learning and innovation",
-          "🤝 Strong collaboration and problem-solving skills",
+          "✨ Automation Software Tester",
+          "🛠️ UI/UX Designer and Developer",
+          "🚀 Founder of Ladestack (AI SaaS Products)",
+          "🤖 Passionate about AI tools and automation",
+          "💡 Always exploring new technologies",
           "",
         ]
         addInstantOutput(cmd, output)
@@ -321,10 +364,9 @@ export default function TerminalPortfolio() {
           ]),
           "CERTIFICATIONS & TRAINING:",
           "",
-          "🏆 MERN Stack Development - Jawan Pakistan (2022)",
-          "📚 Full Stack Web Development Bootcamp",
-          "🎯 React Native Mobile Development",
-          "💻 Advanced JavaScript & ES6+",
+          "🏆 Founder of Ladestack - AI SaaS Products",
+          "📚 Developer and Programmer",
+          "🎯 Automation Testing Expert",
           "",
         ]
         addInstantOutput(cmd, output)
@@ -341,20 +383,14 @@ export default function TerminalPortfolio() {
           "Backend Technologies:",
           ...skills.backend.map((skill) => `• ${skill}`),
           "",
-          "Styling Frameworks:",
-          ...skills.styling.map((skill) => `• ${skill}`),
-          "",
-          "Cloud & DevOps:",
-          ...skills.cloud.map((skill) => `• ${skill}`),
-          "",
-          "Development Tools:",
-          ...skills.tools.map((tool) => `• ${tool}`),
-          "",
           "Programming Languages:",
           ...skills.languages.map((lang) => `• ${lang}`),
           "",
           "Databases:",
           ...skills.databases.map((db) => `• ${db}`),
+          "",
+          "Development Tools:",
+          ...skills.tools.map((tool) => `• ${tool}`),
           "",
         ]
         addInstantOutput(cmd, output)
@@ -406,10 +442,15 @@ export default function TerminalPortfolio() {
           "LANGUAGE PROFICIENCY:",
           "=".repeat(40),
           "",
-          "Urdu:",
-          `🗣️  Speaking: ${languages.urdu.speaking}`,
-          `👂 Listening: ${languages.urdu.listening}`,
-          `✍️  Writing: ${languages.urdu.writing}`,
+          "Marathi:",
+          `🗣️  Speaking: ${languages.marathi.speaking}`,
+          `👂 Listening: ${languages.marathi.listening}`,
+          `✍️  Writing: ${languages.marathi.writing}`,
+          "",
+          "Hindi:",
+          `🗣️  Speaking: ${languages.hindi.speaking}`,
+          `👂 Listening: ${languages.hindi.listening}`,
+          `✍️  Writing: ${languages.hindi.writing}`,
           "",
           "English:",
           `🗣️  Speaking: ${languages.english.speaking}`,
@@ -554,13 +595,13 @@ export default function TerminalPortfolio() {
         switch (file) {
           case "README.md":
             output = [
-              "# Girish Lade - Full Stack Developer Portfolio",
+              "# Girish Balaso Lade - Automation Tester & Programmer Portfolio",
               "",
               `Welcome to ${developer.name}'s interactive terminal portfolio!`,
               "",
-              "🚀 Full Stack Developer specializing in MERN Stack & React Native",
-              "📱 Cross-platform mobile app development expert",
-              "🎓 Computer Science student with hands-on industry experience",
+              "🤖 Automation Software Tester",
+              "🛠️ UI/UX Designer and Developer",
+              "🚀 Founder of Ladestack (AI SaaS Products)",
               "",
               "Quick Commands:",
               "- resume      (Complete CV)",

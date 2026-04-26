@@ -6,13 +6,17 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://ladestack.in'),
   title: {
-    default: 'Girish Lade | Full Stack Developer - Interactive Terminal Portfolio',
-    template: '%s | Girish Lade - Full Stack Developer',
+    default: 'Girish Balaso Lade | Automation Tester & Programmer - Interactive Terminal Portfolio',
+    template: '%s | Girish Lade - Automation Tester & Programmer',
   },
-  description: 'Interactive terminal-style portfolio website of Girish Lade, a Full Stack Developer. Explore skills, projects, experience, and contact information through a CLI-style interface.',
+  description: 'Interactive terminal-style portfolio website of Girish Balaso Lade, an Automation Tester, Programmer, UI/UX Designer, and Founder of Ladestack. Explore skills, projects, experience, and contact information through a CLI-style interface.',
   keywords: [
     'Girish Lade',
-    'Full Stack Developer',
+    'Girish Balaso Lade',
+    'Automation Tester',
+    'Programmer',
+    'UI/UX Designer',
+    'Ladestack',
     'Web Developer',
     'JavaScript Developer',
     'TypeScript Developer',
@@ -45,29 +49,29 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://ladestack.in',
     siteName: 'Girish Lade - Terminal Portfolio',
-    title: 'Girish Lade | Full Stack Developer - Interactive Terminal Portfolio',
-    description: 'Interactive terminal-style portfolio website of Girish Lade, a Full Stack Developer. Explore skills, projects, experience, and contact information through a CLI-style interface.',
+    title: 'Girish Balaso Lade | Automation Tester & Programmer - Interactive Terminal Portfolio',
+    description: 'Interactive terminal-style portfolio website of Girish Balaso Lade, an Automation Tester, Programmer, UI/UX Designer, and Founder of Ladestack.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Girish Lade - Full Stack Developer Portfolio',
+        alt: 'Girish Lade - Automation Tester & Programmer Portfolio',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Girish Lade | Full Stack Developer - Interactive Terminal Portfolio',
-    description: 'Interactive terminal-style portfolio website of Girish Lade, a Full Stack Developer.',
+    title: 'Girish Balaso Lade | Automation Tester & Programmer - Interactive Terminal Portfolio',
+    description: 'Interactive terminal-style portfolio website of Girish Balaso Lade, an Automation Tester and Programmer.',
     creator: '@girish_lade',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Girish Lade - Full Stack Developer Portfolio',
+        alt: 'Girish Lade - Automation Tester & Programmer Portfolio',
       },
     ],
   },
@@ -90,7 +94,7 @@ export const metadata: Metadata = {
   },
 
   category: 'technology',
-  classification: 'Portfolio Website, Developer Portfolio, Full Stack Developer',
+  classification: 'Portfolio Website, Developer Portfolio, Automation Tester, Programmer, UI/UX Designer',
 }
 
 export const viewport = {
