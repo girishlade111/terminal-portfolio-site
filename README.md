@@ -389,8 +389,7 @@ MIT License - Feel free to use this project for your own portfolio.
 
 ## Acknowledgments
 
-- Created with [v0.dev](https://v0.dev)
+- Built with modern web technologies
 - Deployed on [Vercel](https://vercel.com)
-- Built with [shadcn/ui](https://ui.shadcn.com) components
 - Styled with [Tailwind CSS](https://tailwindcss.com)
 - Icons by [Lucide](https://lucide.dev)
