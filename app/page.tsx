@@ -21,7 +21,7 @@ export default function TerminalPortfolio() {
   const inputRef = useRef<HTMLInputElement>(null)
   const terminalRef = useRef<HTMLDivElement>(null)
 
-const developer = {
+  const developer = {
     name: "Girish Balaso Lade",
     title: "Automation Tester and Programmer",
     email: "admin@ladestack.in",
@@ -33,6 +33,15 @@ const developer = {
     instagram: "https://www.instagram.com/girish_lade_/",
     codepen: "https://codepen.io/Girish-Lade-the-looper",
   }
+
+  const socialLinks = [
+    { name: "GitHub", url: developer.github, icon: Github, color: "text-gray-400" },
+    { name: "LinkedIn", url: developer.linkedin, icon: Linkedin, color: "text-blue-400" },
+    { name: "Instagram", url: developer.instagram, icon: Code2, color: "text-pink-400" },
+    { name: "CodePen", url: developer.codepen, icon: Code2, color: "text-white" },
+    { name: "Website", url: developer.website, icon: Globe, color: "text-green-400" },
+    { name: "Email", url: `mailto:${developer.email}`, icon: Mail, color: "text-yellow-400" },
+  ]
 
   const experience = [
     {
@@ -63,85 +72,6 @@ const developer = {
     languages: ["Python", "JavaScript", "TypeScript", "Java", "React", "Next.js"],
     databases: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Supabase", "Appwrite", "Firebase"],
     tools: ["Git", "Docker", "AWS", "Azure", "VS Code", "n8n", "Slack", "Vercel", "Netlify"],
-  }
-
-  const socialLinks = [
-    { name: "GitHub", url: developer.github, icon: Github, color: "text-gray-400" },
-    { name: "LinkedIn", url: developer.linkedin, icon: Linkedin, color: "text-blue-400" },
-    { name: "Instagram", url: developer.instagram, icon: Code2, color: "text-pink-400" },
-    { name: "CodePen", url: developer.codepen, icon: Code2, color: "text-white" },
-    { name: "Website", url: developer.website, icon: Globe, color: "text-green-400" },
-    { name: "Email", url: `mailto:${developer.email}`, icon: Mail, color: "text-yellow-400" },
-  ]
-
-  const experience = [
-    {
-      title: "Mern Stack Developer - Front & Back End Development",
-      company: "kaj Consultancy",
-      period: "September 2023 - Present",
-      description: [
-        "Spearheading front-end web development, meticulously crafting visually stunning and highly interactive user interfaces",
-        "Specializing in translating design concepts into seamless, responsive web applications",
-        "Utilizing cutting-edge technologies for optimal user interface development",
-      ],
-    },
-    {
-      title: "MERN Stack Developer",
-      company: "Matrix Tech Software Solutions",
-      period: "December 2022 - December 2023",
-      description: [
-        "Developed and maintained full-stack web applications using the MERN stack",
-        "Collaborated with cross-functional teams to gather project requirements",
-        "Implemented responsive front-end interfaces with React.js",
-        "Integrated RESTful APIs for seamless communication between components",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company: "Matrix Tech Software Solutions",
-      period: "December 2022 - December 2023",
-      description: [
-        "Crafted captivating cross-platform mobile applications",
-        "Merged native power with unified codebase for enchanting user experiences",
-        "Transformed project visions into technical solutions exceeding expectations",
-      ],
-    },
-    {
-      title: "Assistant Teacher - MERN Stack Development",
-      company: "Jawan Pakistan",
-      period: "December 2022 - August 2023",
-      description: [
-        "Conducted MERN Stack development training sessions for students",
-        "Provided guidance on MongoDB, Express.js, React.js, and Node.js",
-        "Supported students in problem-solving, debugging, and troubleshooting",
-        "Fostered collaborative learning environment",
-      ],
-    },
-  ]
-
-  const education = [
-    {
-      degree: "Bachelor's Degree In Progress",
-      field: "Computer Science",
-      institution: "SMIU",
-      period: "2021 - Present",
-    },
-    {
-      degree: "MERN Stack Development",
-      field: "Full Stack Web Development",
-      institution: "Jawan Pakistan",
-      period: "2022",
-    },
-  ]
-
-  const skills = {
-    frontend: ["HTML/CSS", "JavaScript", "React JS", "Angular", "Next.js", "React Native", "Redux"],
-    backend: ["Node.js", "Nest.js", "Express.js", "MongoDB", "SQL Lite", "Firebase"],
-    styling: ["MUI", "Bootstrap", "Tailwind CSS"],
-    cloud: ["AWS"],
-    languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
-    databases: ["MongoDB", "SQLite", "Firebase"],
-    tools: ["Git", "VS Code", "Postman", "npm", "yarn"],
   }
 
   const languages = {
@@ -192,18 +122,6 @@ const developer = {
       tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "browser-image-compression"],
       status: "Production",
       type: "Web Tool",
-    },
-  ]
-      tech: ["Next.js", "MongoDB", "Tailwind CSS", "AWS S3"],
-      status: "Development",
-      type: "Web Application",
-    },
-    {
-      name: "Learning Management System",
-      description: "Educational platform for online courses and student management",
-      tech: ["React.js", "Node.js", "MongoDB", "Socket.io"],
-      status: "Production",
-      type: "Web Application",
     },
   ]
 
@@ -571,11 +489,13 @@ const developer = {
           "TECHNICAL SKILLS:",
           `Frontend: ${skills.frontend.join(", ")}`,
           `Backend: ${skills.backend.join(", ")}`,
-          `Styling: ${skills.styling.join(", ")}`,
-          `Cloud: ${skills.cloud.join(", ")}`,
+          `Languages: ${skills.languages.join(", ")}`,
+          `Databases: ${skills.databases.join(", ")}`,
+          `Tools: ${skills.tools.join(", ")}`,
           "",
           "LANGUAGES:",
-          `Urdu: Speaking, Listening, Writing (Native)`,
+          `Marathi: Speaking, Listening, Writing (Native)`,
+          `Hindi: Speaking, Listening, Writing (Native)`,
           `English: Speaking, Listening, Writing (Fluent)`,
           "",
           "HOBBIES:",
