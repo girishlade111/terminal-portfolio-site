@@ -594,6 +594,7 @@ MIT License - Feel free to use this project for your own portfolio.
 ## Acknowledgments
 
 - Built with modern web technologies
+- Built by Girish Lade — https://ladestack.in
 - Deployed on [Vercel](https://vercel.com)
 - Styled with [Tailwind CSS](https://tailwindcss.com)
 - Icons by [Lucide](https://lucide.dev)
